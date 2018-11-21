@@ -1,0 +1,19 @@
+body {
+  word-wrap: break-word;
+}
+
+.read-more-link {
+  display: table;
+  padding: var(--spacing-half) var(--spacing);
+  border: 1px solid var(--color-text);
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: var(--spacing) auto 0;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-alt);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,57 @@
+.page-header,
+.entry-header {
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    color: var(--color-text);
+
+    &:hover {
+      color: var(--color-anchor);
+      text-decoration: none;
+    }
+  }
+} 
+
+.page-header {
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+}
+
+.entry-header {
+  .fif-pin { display: none; }
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.sticky .entry-header .fif-pin {
+  display: block;
+}
+
+.entry-meta {
+  display: grid;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .page-header {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  
+  .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > *:not(:last-child) {
+      margin-right: var(--spacing);
+    }
+  }
+}

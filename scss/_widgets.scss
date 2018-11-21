@@ -1,0 +1,51 @@
+#widget-areas-footer {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-alt);
+}
+
+.widget-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-half);
+}
+
+.widget {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    ul {
+      margin: 0 var(--spacing-half);
+    }
+  }
+
+  li {
+    margin-bottom: var(--spacing-half);
+  }
+}
+
+.widget_calendar {
+  table {
+    table-layout: fixed;
+  }
+
+  td,
+  th {
+    text-align: center;
+  }
+
+  #prev,
+  #prev+.pad {
+    border-right: 0;
+  }
+
+  #prev {
+    text-align: left;
+  }
+
+  #next {
+    text-align: right;
+  }
+}

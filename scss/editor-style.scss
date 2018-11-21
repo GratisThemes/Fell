@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+  Theme Name: Fell
+  Description: Used to style the TinyMCE editor.
+*/
+
+/* Table of Contents
+  -------------------------------
+  1.0 Normalize
+  2.0 Variables
+  3.0 Layout
+  4.0 Tags and Elements
+  5.0 Form elements
+*/
+
+/* 1.0 Normalize*/
+@import "normalize";
+
+/* 2.0 Variables */
+@import "variables";
+
+/* 3.0 Layput */
+body {
+  margin: var(--spacing);
+}
+
+/* 4.0 Tags and elements */
+@import "content-tags-and-elements";
+
+/* 5.0 Form elements */
+@import "content-form-elements";

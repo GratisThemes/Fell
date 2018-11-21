@@ -1,0 +1,34 @@
+.entry-thumbnail {
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.entry-thumbnail-placeholder {
+  background-color: #EAEAEA;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  i {
+    font-size: 80px;
+    color: #999999;
+    padding: var(--spacing);
+  }
+}
+
+.layout-two-columns,
+.layout-criss-cross {
+  .entry-thumbnail {
+    width: 100%;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

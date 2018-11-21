@@ -1,0 +1,32 @@
+{
+  "name": "fell",
+  "version": "1.0.0",
+  "description": "Just another WordPress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GratisThemes/Fell.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Gratis Themes",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/GratisThemes/Fell/issues"
+  },
+  "homepage": "https://github.com/GratisThemes/Fell#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-iconfont": "^10.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sort": "^2.0.0",
+    "gulp-wp-pot": "^2.3.1",
+    "gulp-zip": "^4.1.0"
+  }
+}

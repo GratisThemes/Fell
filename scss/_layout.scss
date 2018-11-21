@@ -1,0 +1,36 @@
+#site-container {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  grid-template-areas:
+    "site-header"
+    "widget-areas-above-content"
+    "main"
+    "widget-area-left-sidebar"
+    "widget-area-right-sidebar"
+    "widget-areas-below-content"
+    "widget-areas-footer"
+    "site-footer"
+  ;
+}
+
+#site-header {
+  grid-area: site-header;
+}
+
+#site-footer {
+  grid-area: site-footer;
+}
+
+@media (min-width: 1024px) {
+  #site-container {
+    grid-template-columns: minmax(0, auto) minmax(0, 100%) minmax(0, auto);
+    grid-template-areas:
+      "site-header site-header site-header"
+      "widget-areas-above-content widget-areas-above-content widget-areas-above-content"
+      "widget-area-left-sidebar main widget-area-right-sidebar"
+      "widget-areas-below-content widget-areas-below-content widget-areas-below-content"
+      "widget-areas-footer widget-areas-footer widget-areas-footer"
+      "site-footer site-footer site-footer"
+    ;
+  }
+}

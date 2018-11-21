@@ -1,0 +1,105 @@
+form {
+  overflow: hidden;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+input[type="search"],
+textarea,
+select {
+  border: 1px solid var(--color-bg-alt);
+  color: var(--color-text);
+  border-radius: 0px;
+  padding: var(--spacing-half);
+  max-width: calc(100% - var(--spacing) - 2px);
+}
+
+/* iOS not respecting border-radius */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="color"] {
+  background-color: var(--color-bg);
+  cursor: pointer;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-alt);
+  border: 0;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: var(--spacing-half);
+  text-transform: uppercase;
+  opacity: .9;
+  transition: opacity .3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+label {
+  font-weight: 600;
+}
+
+fieldset {
+  min-width: 0px;
+}
+
+.search-form,
+.post-password-form p:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form .search-field {
+  max-width: 100%;
+}
+
+#widget-areas-footer,
+#site-footer {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  input[type="search"],
+  textarea,
+  select {
+    border-color: var(--color-text-alt);
+  }
+
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  button {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+}

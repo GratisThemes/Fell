@@ -1,0 +1,47 @@
+.home #site-header {
+  height: 100vh;
+}
+
+#site-header {
+  position: relative;
+  height: 50vh;
+  background-image: url('assets/images/kluane.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#site-identity-container {
+  position: absolute;
+  display: grid;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#site-identity {
+  background-color: rgba(255,255,255,.75);
+  display: grid;
+  grid-gap: var(--spacing-half);
+  margin: auto;
+  padding: var(--spacing);
+  text-align: center;
+  border: 1px solid var(--color-text);
+  text-transform: uppercase;
+  max-width: calc(100% - calc(var(--spacing) * 4));
+}
+
+.site-title {
+  font-size: 30px;
+  color: var(--color-text);
+}
+
+.site-tagline {
+  font-size: 18px;
+}
