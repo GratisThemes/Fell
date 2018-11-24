@@ -4,7 +4,7 @@
  *
  * @package Fell
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.0.1
  */
 ?>
 
@@ -17,11 +17,11 @@
   <?php while ( have_posts() ): ?>
     
     <?php the_post(); ?>
+
+    <?php get_template_part( 'template-parts/header' ); ?>
     
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
-    
-      <?php get_template_part( 'template-parts/header' ); ?>
-    
+        
       <?php get_template_part( 'template-parts/content' ); ?>
     
     </article>

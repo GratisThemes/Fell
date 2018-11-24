@@ -26,6 +26,10 @@ normalize.css v8.0.0
 License: MIT
 Source: github.com/necolas/normalize.css
 
+Lora
+https://fonts.google.com/specimen/Lora
+License: Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
+
 -----------------------------------------------------------------------------
 
 # Images
@@ -41,3 +45,10 @@ https://unsplash.com/photos/Bkci_8qcdvQ
 
 1.0.0 - 2018.11.21
 - Initial release
+
+1.0.1 - 2018.11.24
+- Fixed page.php, single.php and 404.php markup
+- Removed extra character in template-parts/content.php
+- Added info about the Lora web font to readme.txt
+- Updated theme description
+- Fixed #site-identity not changing background-color

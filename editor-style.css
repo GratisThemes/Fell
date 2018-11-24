@@ -361,7 +361,7 @@ template {
   --font-size: 16px;
 }
 
-/* 3.0 Layput */
+/* 3.0 Layout */
 body {
   margin: var(--spacing);
 }

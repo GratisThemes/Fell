@@ -4,7 +4,7 @@
  *
  * @package Fell
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.0.1
  */
 ?>
 <div class="entry-content">
@@ -19,6 +19,6 @@
   
     <?php endif; ?>
 
-  <div style="clear: both;")>&nbsp;</div>
+  <div style="clear: both;">&nbsp;</div>
 
 </div>

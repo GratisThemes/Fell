@@ -3,8 +3,8 @@
   Theme URI: https://gratisthemes.github.io/fell
   Author: Gratis Themes
   Author URI: https://gratisthemes.github.io/
-  Description: Modern and simplistic theme
-  Version: 1.0.0
+  Description: Stylish yet simple theme with a full screen landing page. Designed to look great on both desktops and mobile devices.
+  Version: 1.0.1
   License: GNU General Public License v3
   License URI: http://www.gnu.org/licenses/gpl-3.0.html  
   Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
@@ -563,7 +563,8 @@ main > article {
 }
 
 #site-identity {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--color-bg);
+  opacity: .75;
   display: grid;
   grid-gap: var(--spacing-half);
   margin: auto;
