@@ -4,7 +4,7 @@
  *
  * @package Fell
  * @since 1.0.0
- * @version  1.0.0
+ * @version  1.1.0
  */
 ?>
 
@@ -34,8 +34,8 @@
 
   <?php
   the_comments_navigation( array(
-    'prev_text'  => '<< Older comments',
-    'next_text'  => 'Newer comments >>',
+    'prev_text'  =>  __( 'Older comments', 'fell' ) . '<span class="screen-reader-text">' . __( 'Older comments', 'fell' ) . '</span>',
+    'next_text'  =>  __( 'Newer comments', 'fell' ) . '<span class="screen-reader-text">' . __( 'Newer comments', 'fell' ) . '</span>',
   ) );
   ?>
 

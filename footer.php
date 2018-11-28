@@ -1,3 +1,13 @@
+<?php
+/**
+ * The template for displaying the footer
+ * Displays all of the head element after the content.
+ *
+ * @package Fell
+ * @since 1.0.0
+ * @version 1.1.0
+ */
+?>
     <footer id="site-footer">
     
       <?php
@@ -23,6 +33,11 @@
       ?>
 
       <div id="site-footer-information">
+        <?php
+        if ( function_exists( 'the_privacy_policy_link' ) ) {
+          the_privacy_policy_link();
+        }
+        ?>
           
         <span>
           <?php echo get_theme_mod( 'footer_text', get_bloginfo( 'name' ) ); ?>
@@ -44,10 +59,8 @@
           $fell_theme_data = wp_get_theme();
 
           printf(
-            '<span>%1$s: <a href="%2$s">%3$s</a></span>',
-            __( 'Theme', 'fell' ),
-            esc_url( $fell_theme_data->get( 'ThemeURI' ) ),
-            $fell_theme_data[ 'Name' ]
+            '<span>' . __( 'Theme: %s', 'fell' ) . '</span>',
+            '<a href="' . esc_url( $fell_theme_data->get( 'ThemeURI' ) ) . '">' . $fell_theme_data[ 'Name' ] . '</a>'
           );
         }
         ?>
@@ -56,7 +69,10 @@
 
     </footer><!-- #site-footer -->
 
-    <a href="#" id="scroll-to-top"><i class="fif fif-chevron"></i></a>
+    <a href="#" id="scroll-to-top">
+      <i class="fif fif-chevron"></i>
+      <span class="screen-reader-text"><?php _e( 'Scroll to the top', 'fell' ); ?></span>
+    </a>
 
   </div><!-- #wrapper -->
 

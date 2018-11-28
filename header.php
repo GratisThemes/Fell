@@ -4,8 +4,8 @@
  * Displays all of the head element and everything up until the content.
  *
  * @package Fell
- * @since 1.0
- * @version 1.0
+ * @since 1.0.0
+ * @version 1.0.0
  */
 ?>
 <!DOCTYPE html>
@@ -17,9 +17,7 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
   
   <?php if ( is_singular() && pings_open() ) : ?>
-  
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  
   <?php endif;?>
 
   <?php wp_head(); ?>

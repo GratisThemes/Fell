@@ -16,31 +16,35 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:20
+#: 404.php:16
+msgid "404 Not Found"
+msgstr ""
+
+#: 404.php:21
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:24
-msgid "It looks like nothing was found at this location."
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: archive.php:39, index.php:39, search.php:39
+#: archive.php:33, index.php:30, search.php:40
 msgid "Prev"
 msgstr ""
 
-#: archive.php:39, index.php:39, search.php:39
+#: archive.php:33, index.php:30, search.php:40
 msgid "Previous page"
 msgstr ""
 
-#: archive.php:40, index.php:40, search.php:40, template-parts/footer.php:70
+#: archive.php:34, index.php:31, search.php:41, template-parts/entry-footer.php:63
 msgid "Next"
 msgstr ""
 
-#: archive.php:40, index.php:40, search.php:40
+#: archive.php:34, index.php:31, search.php:41
 msgid "Next page"
 msgstr ""
 
-#: archive.php:41, index.php:41, search.php:41
+#: archive.php:35, index.php:32, search.php:42
 msgid "Page"
 msgstr ""
 
@@ -51,37 +55,49 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: footer.php:36
+#: comments.php:37, comments.php:37
+msgid "Older comments"
+msgstr ""
+
+#: comments.php:38, comments.php:38
+msgid "Newer comments"
+msgstr ""
+
+#: footer.php:51
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:48
-msgid "Theme"
+#: footer.php:62
+msgid "Theme: %s"
 msgstr ""
 
-#: functions.php:73
+#: footer.php:74
+msgid "Scroll to the top"
+msgstr ""
+
+#: functions.php:78
 msgctxt "Header Image"
 msgid "header_image"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:84
 msgid "Header"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:85
 msgid "Social links"
 msgstr ""
 
-#: functions.php:81, inc/customizer.php:112
+#: functions.php:86, inc/customizer.php:112
 msgid "Footer"
 msgstr ""
 
-#: search.php:47
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+#: search.php:21
+msgid "Search results for: %s"
 msgstr ""
 
-#: single.php:31
-msgid "Pages:"
+#: search.php:26
+msgid "Nothing found"
 msgstr ""
 
 #: inc/customizer.php:19
@@ -224,58 +240,58 @@ msgstr ""
 msgid "Footer three"
 msgstr ""
 
+#: template-parts/content-aside.php:16, template-parts/content-quote.php:16, template-parts/content-status.php:16
+msgid "%1$s @ %2$s"
+msgstr ""
+
+#: template-parts/content-aside.php:26, template-parts/content-link.php:35, template-parts/content-page.php:19, template-parts/content-quote.php:26, template-parts/content-status.php:26, template-parts/entry-header.php:63
+msgid "Edit"
+msgstr ""
+
+#: template-parts/content-aside.php:46, template-parts/content-audio.php:45, template-parts/content-chat.php:25, template-parts/content-gallery.php:37, template-parts/content-link.php:69, template-parts/content-page.php:32, template-parts/content-quote.php:46, template-parts/content-status.php:46, template-parts/content-video.php:45, template-parts/content.php:35
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-link.php:25, template-parts/entry-header.php:53
+msgid "By %1$s"
+msgstr ""
+
 #: template-parts/content-none.php:12
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/footer.php:20
+#: template-parts/entry-footer.php:16
 msgid "About the author"
 msgstr ""
 
-#: template-parts/footer.php:43
+#: template-parts/entry-footer.php:36
 msgid "categories"
 msgstr ""
 
-#: template-parts/footer.php:55
+#: template-parts/entry-footer.php:48
 msgid "tags"
 msgstr ""
 
-#: template-parts/footer.php:65
+#: template-parts/entry-footer.php:58
 msgid "Previous post"
 msgstr ""
 
-#: template-parts/footer.php:66
+#: template-parts/entry-footer.php:59
 msgid "Previous"
 msgstr ""
 
-#: template-parts/footer.php:69
+#: template-parts/entry-footer.php:62
 msgid "Next post"
 msgstr ""
 
-#: template-parts/header-entry.php:19, template-parts/header.php:39
+#: template-parts/entry-header.php:20, template-parts/entry-header.php:25
 msgid "Untitled post"
 msgstr ""
 
-#: template-parts/header.php:20
-msgid "Search results for: %s"
-msgstr ""
-
-#: template-parts/header.php:30
-msgid "404 Not Found"
-msgstr ""
-
-#: template-parts/meta.php:26
+#: template-parts/entry-header.php:44
 msgid "%1$s comments"
 msgstr ""
 
-#: template-parts/meta.php:26
+#: template-parts/entry-header.php:44
 msgid "%1$s comment"
-msgstr ""
-
-#: template-parts/meta.php:36
-msgid "By %1$s"
-msgstr ""
-
-#: template-parts/meta.php:47
-msgid "Edit"
 msgstr ""

@@ -4,7 +4,7 @@
  *
  * @package Fell
  * @since 1.0.0
- * @version 1.0.1
+ * @version 1.1.0
  */
 ?>
 
@@ -12,36 +12,17 @@
 
 <?php get_sidebar( 'left' ); ?>
 
-<main>
+<main id="site-main" role="main">
 
-  <?php while ( have_posts() ): ?>
-    
-    <?php the_post(); ?>
+  <?php while ( have_posts() ): the_post(); ?>
 
-    <?php get_template_part( 'template-parts/header' ); ?>
-    
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
-        
-      <?php get_template_part( 'template-parts/content' ); ?>
-    
-    </article>
+    <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
-    <?php
-    wp_link_pages( array(
-      'before' => '<div class="page-links">' . __( 'Pages:', 'fell' ),
-      'after' => '</div>',
-      'link_before' => '<span class="page-number">',
-      'link_after' => '</span>',
-    ) );
-    ?>
-
-    <?php get_template_part( 'template-parts/footer' ); ?>
-    
     <?php if ( comments_open() || get_comments_number() ) comments_template(); ?>
 
   <?php endwhile; ?>
 
-</main>
+</main><!-- #site-main -->
 
 <?php get_sidebar(); ?>
 

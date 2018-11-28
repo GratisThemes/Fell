@@ -1,5 +1,7 @@
-form {
-  overflow: hidden;
+input,
+textarea,
+select {
+  max-width: calc(100% - var(--spacing) - 2px);
 }
 
 input[type="text"],
@@ -23,7 +25,6 @@ select {
   color: var(--color-text);
   border-radius: 0px;
   padding: var(--spacing-half);
-  max-width: calc(100% - var(--spacing) - 2px);
 }
 
 /* iOS not respecting border-radius */

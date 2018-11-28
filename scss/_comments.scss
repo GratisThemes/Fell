@@ -27,8 +27,18 @@
   a {
     color: var(--color-text);
   }
+
+  .nav-previous::before {
+    content: '<<';
+    padding-right: 0.5em;
+  }
+
+  .nav-next::after {
+    content: '>>';
+    padding-left: 0.5em;
+  }
 }
-.commentlist {
+.comment-list {
   display: grid;
   grid-gap: var(--spacing);
   grid-template-columns: minmax(0, 100%);

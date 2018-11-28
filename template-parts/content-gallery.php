@@ -3,7 +3,7 @@
  * Template for displaying content
  *
  * @package Fell
- * @since 1.0.0
+ * @since 1.1.0
  * @version 1.1.0
  */
 ?>
@@ -23,21 +23,23 @@
 
   <article class="entry-content">
     <?php
-    if ( ( is_home() || is_archive() ) && get_theme_mod( 'content_view', 'excerpt' ) == 'excerpt' ) {
-
-      the_excerpt();
-
+    $fell_gallery = get_post_gallery();
+    
+    if ( !is_single() && $fell_gallery ) {   
+      
+      echo $fell_gallery;
+    
     } else {
 
       the_content();
-
+    
       wp_link_pages( array(
         'before' => '<div class="page-links">' . __( 'Pages:', 'fell' ),
         'after' => '</div>',
         'link_before' => '<span class="page-number">',
         'link_after' => '</span>',
       ) );
-    
+      
     }
     ?>
   </article><!-- .entry-content -->

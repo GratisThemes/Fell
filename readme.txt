@@ -26,6 +26,10 @@ normalize.css v8.0.0
 License: MIT
 Source: github.com/necolas/normalize.css
 
+-----------------------------------------------------------------------------
+
+# Fonts
+
 Lora
 https://fonts.google.com/specimen/Lora
 License: Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
@@ -52,3 +56,12 @@ https://unsplash.com/photos/Bkci_8qcdvQ
 - Added info about the Lora web font to readme.txt
 - Updated theme description
 - Fixed #site-identity not changing background-color
+
+1.1.0 - 2018.11.28
+- Cleaned up markup
+- Added missing accesibility elements
+- Added support for the_privacy_policy_link
+- Fixed support for various post formats
+- Added support for post formats chat, aside, gallery, status and audio
+- Improved various styles
+- Added thumbnail for default header image

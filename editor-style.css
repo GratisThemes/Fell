@@ -350,6 +350,8 @@ template {
 
 /* 2.0 Variables */
 :root {
+  --font-family: 'Lora', serif;
+  --font-size: 16px;
   --color-bg: #FFFFFF;
   --color-bg-alt: #202020;
   --color-text: #666666;
@@ -358,7 +360,6 @@ template {
   --spacing: 20px;
   --spacing-half: 10px;
   --spacing-double: 40px;
-  --font-size: 16px;
 }
 
 /* 3.0 Layout */
@@ -367,23 +368,7 @@ body {
 }
 
 /* 4.0 Tags and elements */
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: 'Lora', serif;
-  font-size: var(--font-size);
-}
-
 /* Header text */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 var(--spacing);
-}
-
 h1,
 h2,
 h3 {
@@ -397,48 +382,48 @@ h6 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* Paragraph tag */
 p {
-  margin: var(--spacing) 0;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 blockquote {
   font-style: italic;
-  border-left: 2px solid var(--color-bg-alt);
-  padding-left: var(--spacing);
+  border-left: 0.125em solid var(--color-bg-alt);
+  padding-left: 1em;
 }
 
 /* Tables */
 table,
 td,
 th {
-  border: 1px solid var(--color-bg-alt);
+  border: 0.0625em solid var(--color-bg-alt);
 }
 
 table {
   border-collapse: separate;
   border-spacing: 0;
-  border-width: 1px 0 0 1px;
+  border-width: 0.0625em 0 0 0.0625em;
   width: 100%;
 }
 
 td,
 th {
-  border-width: 0 1px 1px 0;
+  border-width: 0 0.0625em 0.0625em 0;
   text-align: left;
+  padding: 0.5em;
 }
 
 /* Defintion lists */
@@ -447,7 +432,7 @@ dt {
 }
 
 dd {
-  margin: 0 0 var(--spacing) var(--spacing);
+  margin: 0 0 1em 1em;
 }
 
 /* Lists */
@@ -457,7 +442,7 @@ ul {
 
 ul,
 ol {
-  margin-left: var(--spacing);
+  margin-left: 1.6em;
   padding: 0;
 }
 
@@ -500,7 +485,7 @@ code {
 hr {
   width: 100%;
   border: none;
-  height: 1px;
+  height: 0.0625em;
   background-color: var(--color-bg-alt);
 }
 
@@ -514,12 +499,12 @@ ins {
 /* Preformated text */
 pre {
   background-color: rgba(0, 0, 0, 0.1);
-  border: 1px dotted var(--color-text);
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border: 0.0625em dotted var(--color-text);
+  -webkit-border-radius: 0.1875em;
+          border-radius: 0.1875em;
   max-width: 100%;
   overflow: auto;
-  padding: var(--spacing);
+  padding: 1em;
 }
 
 #widget-areas-footer hr,
@@ -533,19 +518,15 @@ pre {
 #site-footer table,
 #site-footer th,
 #site-footer td {
-  border-color: var(--color-test-alt) !important;
-}
-
-@media (min-width: 425px) {
-  td,
-  th {
-    padding: var(--spacing-half);
-  }
+  border-color: var(--color-text-alt) !important;
 }
 
 /* 5.0 Form elements */
-form {
-  overflow: hidden;
+input,
+textarea,
+select {
+  max-width: -webkit-calc(100% - var(--spacing) - 2px);
+  max-width: calc(100% - var(--spacing) - 2px);
 }
 
 input[type="text"],
@@ -570,8 +551,6 @@ select {
   -webkit-border-radius: 0px;
           border-radius: 0px;
   padding: var(--spacing-half);
-  max-width: -webkit-calc(100% - var(--spacing) - 2px);
-  max-width: calc(100% - var(--spacing) - 2px);
 }
 
 /* iOS not respecting border-radius */

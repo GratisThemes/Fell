@@ -1,9 +1,9 @@
 <?php
 /**
- * Template for displaying content
+ * Template for displaying audio content
  *
  * @package Fell
- * @since 1.0.0
+ * @since 1.1.0
  * @version 1.1.0
  */
 ?>
@@ -22,13 +22,23 @@
   <?php endif; ?>
 
   <article class="entry-content">
-    <?php
-    if ( ( is_home() || is_archive() ) && get_theme_mod( 'content_view', 'excerpt' ) == 'excerpt' ) {
+    <?php 
+    $fell_audio_content = apply_filters( 'the_content', get_the_content() );
+    $fell_audio = false;
 
-      the_excerpt();
+    // Only get video from the content if a playlist isn't present.
+    if ( false === strpos( $fell_audio_content, 'wp-playlist-script' ) ) {
+      $fell_audio = get_media_embedded_in_content( $fell_audio_content, array( 'audio' ) );
+    }
+
+    if ( !is_single() && !empty( $fell_audio ) ) {
+      
+      foreach ( $fell_audio as $fell_audio_html ) {
+        echo $fell_audio_html;
+      }
 
     } else {
-
+      
       the_content();
 
       wp_link_pages( array(
@@ -37,7 +47,6 @@
         'link_before' => '<span class="page-number">',
         'link_after' => '</span>',
       ) );
-    
     }
     ?>
   </article><!-- .entry-content -->

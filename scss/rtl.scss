@@ -55,10 +55,15 @@ ol {
   }
 }
 
-.page-links {
-  > * {
-    margin-left: 0;
-    margin-right: var(--spacing-half)
+.comment-navigation {
+  .nav-previous::before {
+    padding-right: 0;
+    padding-left: 0.5em;
+  }
+
+  .nav-next::after {
+    padding-left: 0;
+    padding-right: 0.5em;
   }
 }
 
@@ -69,6 +74,12 @@ ol {
 .commentlist {
   margin-left: auto;
   margin-right: 0;
+}
+
+.widget {
+  ul ul {
+    margin: 0 1rem 0 0;
+  }
 }
 
 .widget_calendar {

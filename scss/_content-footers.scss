@@ -16,12 +16,14 @@
   display: grid;
   grid-gap: var(--spacing-half);
 
-  h5 {
+  h5,
+  p {
     margin: 0;
   }
 
   > div {
     display: grid;
+    align-content: start;
     grid-gap: var(--spacing-half);
   }
 }

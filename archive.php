@@ -4,7 +4,7 @@
  *
  * @package Fell
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.1.0
  */
 ?>
 
@@ -12,43 +12,37 @@
 
 <?php get_sidebar( 'left' ); ?>
 
-<main>
+<main id="site-main" role="main">
 
-  <?php get_template_part( 'template-parts/header' ); ?>
+  <header class="page-header">
+    <?php the_archive_title( '<h1>', '</h1>' ); ?>
+    <?php the_archive_description(); ?>
+  </header>
 
-  <?php if ( have_posts() ): ?>
-  
-    <?php while ( have_posts() ): ?>
+  <?php
+  if ( have_posts() ) {
+    
+    while ( have_posts() ) {
 
-      <?php the_post(); ?>
-  
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>        
+      the_post();
+      get_template_part( 'template-parts/content', get_post_format() );
 
-        <?php get_template_part( 'template-parts/header', 'entry' ); ?>
+    }
 
-        <?php get_template_part( 'template-parts/thumbnail' ); ?>
-      
-        <?php get_template_part( 'template-parts/content' ); ?>
-  
-      </article>
-
-    <?php endwhile; ?>
-
-    <?php
     the_posts_pagination( array(
       'prev_text' => __( 'Prev', 'fell' ) . '<span class="screen-reader-text">' . __( 'Previous page', 'fell' ) . '</span>',
       'next_text' => __( 'Next', 'fell' ) . '<span class="screen-reader-text">' . __( 'Next page', 'fell' ) . '</span>',
       'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'fell' ) . '</span>'
     ) );
-    ?>
+  
+  } else {
+  
+    get_template_part( 'template-parts/content', 'none' );
 
-  <?php else: ?>
-    
-    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+  }
+  ?>
 
-  <?php endif;?>
-
-</main>
+</main><!-- #site-main -->
 
 <?php get_sidebar(); ?>
 

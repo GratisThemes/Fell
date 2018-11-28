@@ -10,7 +10,7 @@ if ( !function_exists( 'fell_setup' ) ) {
    * Set up theme defaults and registers support for various WordPress features
    *
    * @since  1.0.0
-   * @version 1.0.0
+   * @version 1.1.0
    */
   function fell_setup() {
     // Support for translation files
@@ -50,9 +50,14 @@ if ( !function_exists( 'fell_setup' ) ) {
     ) );
 
     add_theme_support( 'post-formats', array(
-      'video',
-      'quote',
+      'aside',
+      'gallery',
       'link',
+      'quote',
+      'status',
+      'video',
+      'audio',
+      'chat',
     ) );
 
     add_theme_support( 'custom-header', array(
@@ -69,7 +74,7 @@ if ( !function_exists( 'fell_setup' ) ) {
     register_default_headers( array(
       'header_image_name' => array(
         'url'           => '%s/assets/images/kluane.jpg',
-        'thumbnail_url' => '%s/assets/images/kluane.jpg',
+        'thumbnail_url' => '%s/assets/images/kluane-thumbnail.jpg',
         'description'   => _x( 'header_image', 'Header Image', 'fell' )
       )
     ) );

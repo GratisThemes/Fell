@@ -1,40 +1,11 @@
-.gallery {
-  display: grid;
-  grid-template-columns: minmax(0, auto);
-  grid-gap: var(--spacing);
-}
-
-.gallery-item {
-  text-align: center;
-}
-
-.gallery-caption {
-  font-style: italic;
-}
-
-body:not(.content-view-excerpt) {
-  .format-status,
-  .format-link,
-  .format-quote {
-    .entry-content {
-      font-size: 35px;
-    }
+/* Post format: Gallery */
+.format-gallery {
+  .gallery-item {
+    text-align: center;
   }
 }
 
-.format-link .entry-content a::before {
-  font-family: 'fell-icon-font';
-  content: '\EA0F';
-  padding-right: var(--spacing-half);
-}
-
-.format-quote {
-  blockquote {
-    border: none;
-    padding: 0;
-  }
-}
-
+/* Post format: Video */
 .js {
   .format-video {
     iframe,
@@ -45,48 +16,99 @@ body:not(.content-view-excerpt) {
   }
 }
 
-@media (min-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+/* Post format: Aside */
+.format-aside {
+  background-color: rgba(0,0,0,0.1);
+  grid-gap: 0;
+  padding: 1em;
+
+  .entry-meta {
+    font-size: .8rem;
+  }
+}
+
+/* Post format: Status */
+.format-status {
+  grid-gap: 0;
+
+  .entry-meta {
+    font-size: .8rem;
   }
 
-  .gallery-columns-1 {
-    grid-template-columns: minmax(0, 1fr);
+  .entry-content {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+/* Post format: Link */
+.format-link {
+  .entry-content {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
   }
 
-  .gallery-columns-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .entry-content a::before {
+    font-family: 'fell-icon-font';
+    content: '\EA0F';
+    padding-right: .5em;
+  }
+}
+
+/* Post format: Quote */
+.format-quote {
+  grid-gap: 0;
+
+  .entry-meta {
+    font-size: .8rem;
   }
 
-  .gallery-columns-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .entry-content {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 
-  .gallery-columns-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+  blockquote {
+    border: none;
+    padding: 0 2em;
+    position: relative;
 
-  .gallery-columns-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
+    &::before,
+    &::after {
+      position: absolute;
+      font-size: 3rem;
+    }
 
-  .gallery-columns-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
+    &::before {
+      content: '“';
+      top: 0;
+      left: 0;
+    }
 
-  .gallery-columns-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    &::after {
+      content: '”';
+      bottom: 0;
+      right: 0;
+    }
   }
+}
 
-  .gallery-columns-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+/* Post format: Chat */
+body:not(.content-view-excerpt) .format-chat {
+  .entry-content {
+    border: 0.0625em solid var(--color-text);
+    padding: 1em;
+    font-style: italic;
   }
+}
 
-  .gallery-columns-9 {
-    grid-template-columns: repeat(9, minmax(0, 1fr));
-  }
-
-  .gallery-columns-10 {
-    grid-template-columns: repeat(10, minmax(0, 1fr));
+.layout-two-columns {
+  .format-aside,
+  .format-status,
+  .format-quote,
+  .format-link {
+    grid-column: 1 / 3;
   }
 }
