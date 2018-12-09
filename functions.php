@@ -71,6 +71,10 @@ if ( !function_exists( 'fell_setup' ) ) {
       'uploads'        => true,
     ) );
 
+    // Editor styles for TinyMCE and Gutenberg
+    add_theme_support( 'editor-styles' );
+    add_editor_style( 'editor-style.css' );
+
     register_default_headers( array(
       'header_image_name' => array(
         'url'           => '%s/assets/images/kluane.jpg',
@@ -86,7 +90,6 @@ if ( !function_exists( 'fell_setup' ) ) {
       'footer' => __( 'Footer', 'fell' ),
     ) );
 
-    add_editor_style( array( 'editor-style.css' ) );
   }
   add_action( 'after_setup_theme', 'fell_setup' );
 

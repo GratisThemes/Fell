@@ -10,7 +10,7 @@ const zip        = require( 'gulp-zip' )
 const info = {
   name:      'Fell',
   slug:      'fell',
-  version:   '1.1.0',
+  version:   '1.1.1',
   author:    'GratisThemes',
   email:     'gratisthemes@gmail.com',
   bugReport: 'https://github.com/GratisThemes/Fell/issues'

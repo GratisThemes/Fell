@@ -70,7 +70,19 @@ fieldset {
   flex-wrap: wrap;
 }
 
-.search-form .search-field {
+.post-password-form input[type="password"] {
+  display: block;
+}
+
+.post-password-form input[type="submit"] {
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  border: 1px solid var(--color-bg-alt);
+}
+
+.search-form .search-field,
+.post-password-form input[type="password"] {
   max-width: 100%;
 }
 

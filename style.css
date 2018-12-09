@@ -5,7 +5,7 @@
   Author: Gratis Themes
   Author URI: https://gratisthemes.github.io/
   Description: Stylish yet simple theme with a full screen landing page. Designed to look great on both desktops and mobile devices.
-  Version: 1.1.0
+  Version: 1.1.1
   License: GNU General Public License v3
   License URI: http://www.gnu.org/licenses/gpl-3.0.html  
   Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, blog, holiday
@@ -954,7 +954,7 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   border-width: 0.0625em 0 0 0.0625em;
-  width: 100%;
+  max-width: 100%;
 }
 
 td,
@@ -1043,6 +1043,7 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1em;
+  word-wrap: normal;
 }
 
 #widget-areas-footer hr,
@@ -1057,6 +1058,14 @@ pre {
 #site-footer th,
 #site-footer td {
   border-color: var(--color-text-alt) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: auto;
+  }
 }
 
 /* 5.4 Content: Form elements */
@@ -1145,7 +1154,19 @@ fieldset {
           flex-wrap: wrap;
 }
 
-.search-form .search-field {
+.post-password-form input[type="password"] {
+  display: block;
+}
+
+.post-password-form input[type="submit"] {
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  border: 1px solid var(--color-bg-alt);
+}
+
+.search-form .search-field,
+.post-password-form input[type="password"] {
   max-width: 100%;
 }
 
@@ -1421,17 +1442,8 @@ body:not(.content-view-excerpt) .format-chat .entry-content {
 }
 
 .post-navigation .nav-links {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  grid-gap: 1em;
 }
 
 .post-navigation .nav-previous a,
@@ -1445,11 +1457,6 @@ body:not(.content-view-excerpt) .format-chat .entry-content {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-}
-
-.post-navigation .nav-next {
-  margin-left: auto;
-  text-align: right;
 }
 
 .pagination .nav-links {
@@ -1485,6 +1492,29 @@ body:not(.content-view-excerpt) .format-chat .entry-content {
 
 .page-links > span {
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .post-navigation .nav-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .post-navigation .nav-previous {
+    margin-right: 1em;
+  }
+  .post-navigation .nav-next {
+    margin-left: auto;
+    text-align: right;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1693,6 +1723,7 @@ body:not(.content-view-excerpt) .format-chat .entry-content {
 }
 
 .widget_calendar table {
+  display: table;
   table-layout: fixed;
 }
 

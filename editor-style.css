@@ -364,6 +364,7 @@ template {
 
 /* 3.0 Layout */
 body {
+  font-family: var(--font-family);
   margin: var(--spacing);
 }
 
@@ -416,7 +417,7 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   border-width: 0.0625em 0 0 0.0625em;
-  width: 100%;
+  max-width: 100%;
 }
 
 td,
@@ -505,6 +506,7 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1em;
+  word-wrap: normal;
 }
 
 #widget-areas-footer hr,
@@ -519,6 +521,24 @@ pre {
 #site-footer th,
 #site-footer td {
   border-color: var(--color-text-alt) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+}
+
+table,
+td,
+th {
+  border: 0.0625em solid black;
+}
+
+hr {
+  background-color: black;
 }
 
 /* 5.0 Form elements */
@@ -607,7 +627,19 @@ fieldset {
           flex-wrap: wrap;
 }
 
-.search-form .search-field {
+.post-password-form input[type="password"] {
+  display: block;
+}
+
+.post-password-form input[type="submit"] {
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  border: 1px solid var(--color-bg-alt);
+}
+
+.search-form .search-field,
+.post-password-form input[type="password"] {
   max-width: 100%;
 }
 

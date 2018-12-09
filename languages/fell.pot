@@ -75,20 +75,20 @@ msgstr ""
 msgid "Scroll to the top"
 msgstr ""
 
-#: functions.php:78
+#: functions.php:82
 msgctxt "Header Image"
 msgid "header_image"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:88
 msgid "Header"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:89
 msgid "Social links"
 msgstr ""
 
-#: functions.php:86, inc/customizer.php:112
+#: functions.php:90, inc/customizer.php:112
 msgid "Footer"
 msgstr ""
 

@@ -21,11 +21,22 @@
 
 /* 3.0 Layout */
 body {
+  font-family: var(--font-family);
   margin: var(--spacing);
 }
 
 /* 4.0 Tags and elements */
 @import "content-tags-and-elements";
+
+table,
+td,
+th {
+  border: 0.0625em solid black;
+}
+
+hr {
+  background-color: black;
+}
 
 /* 5.0 Form elements */
 @import "content-form-elements";

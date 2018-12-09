@@ -39,9 +39,8 @@
 
 .post-navigation {
   .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 1em;
   }
 
   .nav-previous a,
@@ -54,11 +53,6 @@
       font-size: 12px;
       font-weight: 600;
     }
-  }
-
-  .nav-next {
-    margin-left: auto;
-    text-align: right;
   }
 }
 
@@ -86,6 +80,25 @@
 
   > span {
     font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .post-navigation {
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .nav-previous {
+      margin-right: 1em;
+    }
+
+    .nav-next {
+      margin-left: auto;
+      text-align: right;
+    }
   }
 }
 

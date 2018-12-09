@@ -65,3 +65,11 @@ https://unsplash.com/photos/Bkci_8qcdvQ
 - Added support for post formats chat, aside, gallery, status and audio
 - Improved various styles
 - Added thumbnail for default header image
+
+1.1.1 - 2018.12.09
+- Fixed table width
+- Improved post-password responsiveness
+- Fixed word wrapping in pre elements
+- Improved post-navigation responsiveness
+- Improved editor styles
+- Added editor-styles to Gutenberg
