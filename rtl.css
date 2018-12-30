@@ -99,7 +99,7 @@ ol {
 
 @media (min-width: 1024px) {
   #site-container {
-    grid-template-areas: "site-header site-header site-header" "widget-areas-above-content widget-areas-above-content widget-areas-above-content" "widget-area-right-sidebar main widget-area-left-sidebar" "widget-areas-below-content widget-areas-below-content widget-areas-below-content" "widget-areas-footer widget-areas-footer widget-areas-footer" "site-footer site-footer site-footer";
+    grid-template-areas: "site-header site-header site-header" "widget-areas-above-content widget-areas-above-content widget-areas-above-content" "widget-area-right-sidebar main widget-area-left-sidebar" "widget-areas-below-content widget-areas-below-content widget-areas-below-content" "widget-areas-footer widget-areas-footer widget-areas-footer" "site-footer site-footer site-footer";
   }
   #header-nav > li:not(:first-child) {
     padding-left: 0;
