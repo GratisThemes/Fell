@@ -3,15 +3,15 @@
  * Scripts, styles and fonts
  *
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.1.2
  */
 function fell_scripts() {
 
-  // Theme stylesheet
-  wp_enqueue_style( 'fell-style', get_stylesheet_uri() );
-
   // Font Lora from google
   wp_enqueue_style( 'fell-fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i', array(), null);
+
+  // Theme stylesheet
+  wp_enqueue_style( 'fell-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version') );
 
   // Theme JavaScript
   wp_enqueue_script( 'fell-script', get_template_directory_uri() . '/assets/js/functions.js', false, wp_get_theme()->get('Version'), true );

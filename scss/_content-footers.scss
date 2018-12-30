@@ -28,15 +28,6 @@
   }
 }
 
-.post-categories {
-  list-style: none;
-  margin: 0;
-}
-
-.post-tags {
-  display: grid;
-}
-
 .post-navigation {
   .nav-links {
     display: grid;
@@ -120,8 +111,8 @@
     display: flex;
     flex-wrap: wrap;
 
-    > *:not(:last-child) {
-      margin-right: var(--spacing-half);
+    > *:not(:first-child) {
+      margin-left: var(--spacing-half);
     }
   }
 }

@@ -10,7 +10,7 @@ const zip        = require( 'gulp-zip' )
 const info = {
   name:      'Fell',
   slug:      'fell',
-  version:   '1.1.1',
+  version:   '1.1.2',
   author:    'GratisThemes',
   email:     'gratisthemes@gmail.com',
   bugReport: 'https://github.com/GratisThemes/Fell/issues'
@@ -18,7 +18,7 @@ const info = {
 
 // SCSS
 gulp.task('scss', () => {
-  return gulp.src('./scss/*.scss')
+  gulp.src('./scss/*.scss')
     .pipe(plumber())
     .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }))
     .pipe(prefix(['last 30 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -27,7 +27,7 @@ gulp.task('scss', () => {
 
 // Pot
 gulp.task('pot', () => {
-  return gulp.src('./**/*.php')
+  gulp.src('./**/*.php')
     .pipe(plumber())
     .pipe(sort())
     .pipe(wpPot({

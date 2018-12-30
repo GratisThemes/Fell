@@ -71,6 +71,12 @@ if ( !function_exists( 'fell_setup' ) ) {
       'uploads'        => true,
     ) );
 
+    add_theme_support( 'wp-block-styles' );
+
+    add_theme_support( 'align-wide' );
+
+    add_theme_support( 'responsive-embeds' );
+
     // Editor styles for TinyMCE and Gutenberg
     add_theme_support( 'editor-styles' );
     add_editor_style( 'editor-style.css' );

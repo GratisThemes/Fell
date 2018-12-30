@@ -5,13 +5,13 @@
   Author: Gratis Themes
   Author URI: https://gratisthemes.github.io/
   Description: Stylish yet simple theme with a full screen landing page. Designed to look great on both desktops and mobile devices.
-  Version: 1.1.1
+  Version: 1.1.2
   License: GNU General Public License v3
   License URI: http://www.gnu.org/licenses/gpl-3.0.html  
   Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, blog, holiday
   Text Domain: fell
 
-  Fell WordPress Theme, Copyright (C) 2018, Gratis Themes
+  Fell WordPress Theme, Copyright (C) 2018-2019, Gratis Themes
   Fell is distributed under the terms of the GNU GPL v3
 */
 /* Table of Contents
@@ -394,7 +394,7 @@ template {
 #site-container {
   display: grid;
   grid-template-columns: minmax(0, 100%);
-  grid-template-areas: "site-header" "widget-areas-above-content" "main" "widget-area-left-sidebar" "widget-area-right-sidebar" "widget-areas-below-content" "widget-areas-footer" "site-footer";
+  grid-template-areas: "site-header" "widget-areas-above-content" "main" "widget-area-left-sidebar" "widget-area-right-sidebar" "widget-areas-below-content" "widget-areas-footer" "site-footer";
 }
 
 #site-header {
@@ -408,7 +408,7 @@ template {
 @media (min-width: 1024px) {
   #site-container {
     grid-template-columns: minmax(0, auto) minmax(0, 100%) minmax(0, auto);
-    grid-template-areas: "site-header site-header site-header" "widget-areas-above-content widget-areas-above-content widget-areas-above-content" "widget-area-left-sidebar main widget-area-right-sidebar" "widget-areas-below-content widget-areas-below-content widget-areas-below-content" "widget-areas-footer widget-areas-footer widget-areas-footer" "site-footer site-footer site-footer";
+    grid-template-areas: "site-header site-header site-header" "widget-areas-above-content widget-areas-above-content widget-areas-above-content" "widget-area-left-sidebar main widget-area-right-sidebar" "widget-areas-below-content widget-areas-below-content widget-areas-below-content" "widget-areas-footer widget-areas-footer widget-areas-footer" "site-footer site-footer site-footer";
   }
 }
 
@@ -1030,8 +1030,8 @@ hr {
 /* Insert tag */
 ins {
   text-decoration: none;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 /* Preformated text */
@@ -1432,15 +1432,6 @@ body:not(.content-view-excerpt) .format-chat .entry-content {
   grid-gap: var(--spacing-half);
 }
 
-.post-categories {
-  list-style: none;
-  margin: 0;
-}
-
-.post-tags {
-  display: grid;
-}
-
 .post-navigation .nav-links {
   display: grid;
   grid-gap: 1em;
@@ -1538,9 +1529,9 @@ body:not(.content-view-excerpt) .format-chat .entry-content {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  .post-categories > *:not(:last-child),
-  .post-tags > *:not(:last-child) {
-    margin-right: var(--spacing-half);
+  .post-categories > *:not(:first-child),
+  .post-tags > *:not(:first-child) {
+    margin-left: var(--spacing-half);
   }
 }
 

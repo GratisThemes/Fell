@@ -29,26 +29,24 @@
   <?php endif; ?>
   
   <?php
-  $fell_categories_list = get_the_category_list();
-  if ( $fell_categories_list ) : ?>
+  if ( has_category() ) : ?>
     <div class="post-categories-container">
       <i class="fif fif-folder">
         <span class="screen-reader-text"><?php _e( 'categories', 'fell'); ?></span>
       </i>
 
-      <?php echo $fell_categories_list; ?>
+       <span class="post-categories"> <?php the_category( ', ' ); ?></span>
     </div><!-- .post-categories-container -->
   <?php endif; ?>
   
   <?php
-  $fell_tags_list = get_the_tag_list();
-  if ( $fell_tags_list ) : ?>
+  if ( has_tag() ) : ?>
     <div class="post-tags-container">
       <i class="fif fif-tag">
         <span class="screen-reader-text"><?php _e( 'tags', 'fell'); ?></span>
       </i>
 
-      <span class="post-tags"><?php echo $fell_tags_list; ?></span>
+      <span class="post-tags"><?php the_tags( '', ', ' ); ?></span>
     </div><!-- .post-tags-container -->
   <?php endif; ?>
 

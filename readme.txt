@@ -4,7 +4,7 @@ Author: Gratis Themes (https://github.com/GratisThemes)
 License: GNU General Public License v3
 
 # Copyright
-Fell WordPress Theme, Copyright (C) 2018, Gratis Themes
+Fell WordPress Theme, Copyright (C) 2018-2019, Gratis Themes
 Fell is distributed under the terms of the GNU GPL v3
 
 This program is free software: you can redistribute it and/or modify
@@ -73,3 +73,13 @@ https://unsplash.com/photos/Bkci_8qcdvQ
 - Improved post-navigation responsiveness
 - Improved editor styles
 - Added editor-styles to Gutenberg
+
+1.1.2 - 2018.12.30
+- Updated theme copyright year
+- Improved styling of ins elements
+- Added version paramater to stylesheet URI
+- Added post-thumbnail to pages
+- Improved categories and tags logic
+- Added support for block styles
+- Added support for responsive embeds
+- Added support for wide alignment

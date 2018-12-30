@@ -23,6 +23,12 @@
       ?>
     </div><!-- .entry-meta -->
   </header><!-- .entry-header -->
+
+  <?php if ( get_the_post_thumbnail() ): ?>
+    <a class="post-thumbnail" href="<?php the_permalink() ?>">
+      <?php the_post_thumbnail( 'fell-featured-image' ); ?>
+    </a>
+  <?php endif; ?>
   
   <article class="entry-content">
     <?php 

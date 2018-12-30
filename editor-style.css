@@ -493,8 +493,8 @@ hr {
 /* Insert tag */
 ins {
   text-decoration: none;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 /* Preformated text */
@@ -529,12 +529,6 @@ pre {
     overflow: hidden;
     overflow-x: auto;
   }
-}
-
-table,
-td,
-th {
-  border: 0.0625em solid black;
 }
 
 hr {

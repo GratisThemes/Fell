@@ -36,7 +36,7 @@ msgstr ""
 msgid "Previous page"
 msgstr ""
 
-#: archive.php:34, index.php:31, search.php:41, template-parts/entry-footer.php:63
+#: archive.php:34, index.php:31, search.php:41, template-parts/entry-footer.php:61
 msgid "Next"
 msgstr ""
 
@@ -75,20 +75,20 @@ msgstr ""
 msgid "Scroll to the top"
 msgstr ""
 
-#: functions.php:82
+#: functions.php:88
 msgctxt "Header Image"
 msgid "header_image"
 msgstr ""
 
-#: functions.php:88
+#: functions.php:94
 msgid "Header"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:95
 msgid "Social links"
 msgstr ""
 
-#: functions.php:90, inc/customizer.php:112
+#: functions.php:96, inc/customizer.php:112
 msgid "Footer"
 msgstr ""
 
@@ -248,7 +248,7 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: template-parts/content-aside.php:46, template-parts/content-audio.php:45, template-parts/content-chat.php:25, template-parts/content-gallery.php:37, template-parts/content-link.php:69, template-parts/content-page.php:32, template-parts/content-quote.php:46, template-parts/content-status.php:46, template-parts/content-video.php:45, template-parts/content.php:35
+#: template-parts/content-aside.php:46, template-parts/content-audio.php:45, template-parts/content-chat.php:25, template-parts/content-gallery.php:37, template-parts/content-link.php:69, template-parts/content-page.php:38, template-parts/content-quote.php:46, template-parts/content-status.php:46, template-parts/content-video.php:45, template-parts/content.php:35
 msgid "Pages:"
 msgstr ""
 
@@ -264,23 +264,23 @@ msgstr ""
 msgid "About the author"
 msgstr ""
 
-#: template-parts/entry-footer.php:36
+#: template-parts/entry-footer.php:35
 msgid "categories"
 msgstr ""
 
-#: template-parts/entry-footer.php:48
+#: template-parts/entry-footer.php:46
 msgid "tags"
 msgstr ""
 
-#: template-parts/entry-footer.php:58
+#: template-parts/entry-footer.php:56
 msgid "Previous post"
 msgstr ""
 
-#: template-parts/entry-footer.php:59
+#: template-parts/entry-footer.php:57
 msgid "Previous"
 msgstr ""
 
-#: template-parts/entry-footer.php:62
+#: template-parts/entry-footer.php:60
 msgid "Next post"
 msgstr ""
 
