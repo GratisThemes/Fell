@@ -32,8 +32,8 @@ add_filter('excerpt_more', 'fell_excerpt_more');
 function fell_body_class( $classes ) {
 
   if ( is_home() || is_archive() ) {
-    $classes[] = 'layout-' . get_theme_mod( 'content_layout', 'one-column' );
-    $classes[] = 'content-view-' . get_theme_mod( 'content_view', 'excerpt' );    
+    $classes[] = 'layout-' . esc_attr( get_theme_mod( 'content_layout', 'one-column' ) );
+    $classes[] = 'content-view-' . esc_attr( get_theme_mod( 'content_view', 'excerpt' ) );
   }
 
   return $classes;

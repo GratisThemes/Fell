@@ -1,9 +1,13 @@
-# Theme
-Name: Fell
-Author: Gratis Themes (https://github.com/GratisThemes)
+=== Fell ===
+Contributors: knifftech
+Requires at least: WordPress 5.0
+Tested up to: WordPress 5.0
+Version: 1.1.3
 License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, blog
 
-# Copyright
+== Copyright ==
 Fell WordPress Theme, Copyright (C) 2018-2019, Gratis Themes
 Fell is distributed under the terms of the GNU GPL v3
 
@@ -17,62 +21,30 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
------------------------------------------------------------------------------
-
-# Libraries
-# The theme bundles the following third-party resources:
+= Libraries =
+Fell bundles the following third-party resources:
 
 normalize.css v8.0.0
 License: MIT
 Source: github.com/necolas/normalize.css
 
------------------------------------------------------------------------------
-
-# Fonts
-
+= Fonts =
 Lora
 https://fonts.google.com/specimen/Lora
 License: Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 
------------------------------------------------------------------------------
+= Images =
+Default header image (landscape.jpg)
+License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+https://pxhere.com/en/photo/848203
 
-# Images
-
-Default header image (kluane.jpg)
-License: https://unsplash.com/license
-Photo by Kalen Emsley (https://unsplash.com/@kalenemsley)
-https://unsplash.com/photos/Bkci_8qcdvQ
-
------------------------------------------------------------------------------
-
-# Changelog
-
-1.0.0 - 2018.11.21
-- Initial release
-
-1.0.1 - 2018.11.24
-- Fixed page.php, single.php and 404.php markup
-- Removed extra character in template-parts/content.php
-- Added info about the Lora web font to readme.txt
-- Updated theme description
-- Fixed #site-identity not changing background-color
-
-1.1.0 - 2018.11.28
-- Cleaned up markup
-- Added missing accesibility elements
-- Added support for the_privacy_policy_link
-- Fixed support for various post formats
-- Added support for post formats chat, aside, gallery, status and audio
-- Improved various styles
-- Added thumbnail for default header image
-
-1.1.1 - 2018.12.09
-- Fixed table width
-- Improved post-password responsiveness
-- Fixed word wrapping in pre elements
-- Improved post-navigation responsiveness
-- Improved editor styles
-- Added editor-styles to Gutenberg
+== Changelog ==
+1.1.3 - 2019.01.18
+- Improved readme file
+- Replaced default header image
+- Escaped various strings
+- Removed "Holiday" tag
+- Updated screenshot
 
 1.1.2 - 2018.12.30
 - Updated theme copyright year
@@ -83,3 +55,30 @@ https://unsplash.com/photos/Bkci_8qcdvQ
 - Added support for block styles
 - Added support for responsive embeds
 - Added support for wide alignment
+
+1.1.1 - 2018.12.09
+- Fixed table width
+- Improved post-password responsiveness
+- Fixed word wrapping in pre elements
+- Improved post-navigation responsiveness
+- Improved editor styles
+- Added editor-styles to Gutenberg
+
+1.1.0 - 2018.11.28
+- Cleaned up markup
+- Added missing accesibility elements
+- Added support for the_privacy_policy_link
+- Fixed support for various post formats
+- Added support for post formats chat, aside, gallery, status and audio
+- Improved various styles
+- Added thumbnail for default header image
+
+1.0.1 - 2018.11.24
+- Fixed page.php, single.php and 404.php markup
+- Removed extra character in template-parts/content.php
+- Added info about the Lora web font to readme.txt
+- Updated theme description
+- Fixed #site-identity not changing background-color
+
+1.0.0 - 2018.11.21
+- Initial release

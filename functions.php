@@ -61,7 +61,7 @@ if ( !function_exists( 'fell_setup' ) ) {
     ) );
 
     add_theme_support( 'custom-header', array(
-      'default-image'  => '%s/assets/images/kluane.jpg',
+      'default-image'  => '%s/assets/images/landscape.jpg',
       'random-default' => false,
       'width'          => 1500,
       'height'         => 1000,
@@ -83,8 +83,8 @@ if ( !function_exists( 'fell_setup' ) ) {
 
     register_default_headers( array(
       'header_image_name' => array(
-        'url'           => '%s/assets/images/kluane.jpg',
-        'thumbnail_url' => '%s/assets/images/kluane-thumbnail.jpg',
+        'url'           => '%s/assets/images/landscape.jpg',
+        'thumbnail_url' => '%s/assets/images/landscape-thumbnail.jpg',
         'description'   => _x( 'header_image', 'Header Image', 'fell' )
       )
     ) );
