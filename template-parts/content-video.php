@@ -34,7 +34,48 @@
     if ( !is_single() && !empty( $fell_video ) ) {
       
       foreach ( $fell_video as $fell_video_html ) {
-        echo $fell_video_html;
+        echo wp_kses( $fell_video_html, array(
+          'video' => array(
+            'id'       => true,
+            'class'    => true,
+            'width'    => true,
+            'height'   => true,
+            'autoplay' => true,
+            'controls' => true,
+            'loop'     => true,
+            'muted'    => true,
+            'poster'   => true,
+            'preload'  => true,
+            'src'      => true,
+          ),
+          'object' => array(
+            'id'     => true,
+            'class'  => true,
+            'type'   => true,
+            'usemap' => true,
+            'width'  => true,
+            'height' => true,
+            'form'   => true,
+          ),
+          'embed' => array(
+            'id'     => true,
+            'class'  => true,
+            'width'  => true,
+            'height' => true,
+            'type'   => true,
+            'src'    => true,
+          ),
+          'iframe' => array( 
+            'id'          => true,
+            'class'       => true,
+            'width'       => true,
+            'height'      => true,
+            'src'         => true,
+            'srcdoc'      => true,
+            'frameborder' => true,
+            'scrolling'   => true,
+          )
+        ) );
       }
 
     } else {

@@ -34,7 +34,18 @@
     if ( !is_single() && !empty( $fell_audio ) ) {
       
       foreach ( $fell_audio as $fell_audio_html ) {
-        echo $fell_audio_html;
+        echo wp_kses( $fell_audio_html, array(
+          'audio' => array(
+            'id'       => true,
+            'class'    => true,
+            'autoplay' => true,
+            'controls' => true,
+            'loop'     => true,
+            'muted'    => true,
+            'preload'  => true,
+            'src'      => true,
+          )
+        ) );
       }
 
     } else {

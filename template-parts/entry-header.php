@@ -42,7 +42,7 @@
     if ( $fell_comment_count && comments_open() ) {
       printf(
         '<span><a href="%2$s#comments">' . ( $fell_comment_count > 1 ? __( '%1$s comments', 'fell' ) : __( '%1$s comment', 'fell' ) ) . '</a></span>',
-        $fell_comment_count,
+        esc_html( $fell_comment_count ),
         esc_url( get_permalink() )
       );
     }

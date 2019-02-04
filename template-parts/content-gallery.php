@@ -25,9 +25,9 @@
     <?php
     $fell_gallery = get_post_gallery();
     
-    if ( !is_single() && $fell_gallery ) {   
+    if ( !is_single() && get_post_gallery() ) {   
       
-      echo $fell_gallery;
+      echo wp_kses( $fell_gallery, wp_kses_allowed_html( 'post' ) );
     
     } else {
 

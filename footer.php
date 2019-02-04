@@ -60,7 +60,7 @@
 
           printf(
             '<span>' . __( 'Theme: %s', 'fell' ) . '</span>',
-            '<a href="' . esc_url( $fell_theme_data->get( 'ThemeURI' ) ) . '">' . $fell_theme_data[ 'Name' ] . '</a>'
+            '<a href="' . esc_url( $fell_theme_data->get( 'ThemeURI' ) ) . '">' . esc_html( $fell_theme_data[ 'Name' ] ) . '</a>'
           );
         }
         ?>

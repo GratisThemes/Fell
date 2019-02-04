@@ -248,7 +248,7 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: template-parts/content-aside.php:46, template-parts/content-audio.php:45, template-parts/content-chat.php:25, template-parts/content-gallery.php:37, template-parts/content-link.php:69, template-parts/content-page.php:38, template-parts/content-quote.php:46, template-parts/content-status.php:46, template-parts/content-video.php:45, template-parts/content.php:35
+#: template-parts/content-aside.php:46, template-parts/content-audio.php:56, template-parts/content-chat.php:25, template-parts/content-gallery.php:37, template-parts/content-link.php:76, template-parts/content-page.php:38, template-parts/content-quote.php:46, template-parts/content-status.php:46, template-parts/content-video.php:86, template-parts/content.php:35
 msgid "Pages:"
 msgstr ""
 

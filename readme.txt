@@ -2,7 +2,7 @@
 Contributors: knifftech
 Requires at least: WordPress 5.0
 Tested up to: WordPress 5.0
-Version: 1.1.3
+Version: 1.1.4
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, blog
@@ -39,6 +39,9 @@ License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 https://pxhere.com/en/photo/848203
 
 == Changelog ==
+1.1.4 - 2019.02.04
+- Escaped various variables
+
 1.1.3 - 2019.01.18
 - Improved readme file
 - Replaced default header image

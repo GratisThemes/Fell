@@ -58,7 +58,14 @@
     if ( !empty( $fell_link ) ) {
 
       foreach ( $fell_link as $fell_link_html ) {
-        echo $fell_link_html;
+        echo wp_kses( $fell_link_html, array(
+          'a' => array(
+            'id'    => true,
+            'class' => true,
+            'title' => true,
+            'href'  => true,
+          )
+        ) );
       }
 
     } else {
