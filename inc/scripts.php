@@ -3,12 +3,15 @@
  * Scripts, styles and fonts
  *
  * @since 1.0.0
- * @version 1.1.2
+ * @version 1.1.5
  */
 function fell_scripts() {
 
   // Font Lora from google
   wp_enqueue_style( 'fell-fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i', array(), null);
+
+  // Fell icon font
+  wp_enqueue_style( 'fell-icon-font', get_template_directory_uri() . '/assets/fonts/fell-icon-font/fell-icon-font.css', array(), wp_get_theme()->get('Version'));
 
   // Theme stylesheet
   wp_enqueue_style( 'fell-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version') );

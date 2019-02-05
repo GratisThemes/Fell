@@ -1,13 +1,18 @@
+/**
+ * Fell Icon Font
+ * MIT License
+ */
+
 $font-name: fell-icon-font;
 $font-prefix: 'fif';
 
 @font-face {
   font-family: $font-name;
-  src: url('assets/fonts/#{$font-name}.eot');
-  src: url('assets/fonts/#{$font-name}.eot#iefix') format('embedded-opentype'),
-       url('assets/fonts/#{$font-name}.woff') format('woff'),
-       url('assets/fonts/#{$font-name}.ttf') format('truetype'),
-       url('assets/fonts/#{$font-name}.svg##{$font-name}') format('svg');
+  src: url('#{$font-name}.eot');
+  src: url('#{$font-name}.eot#iefix') format('embedded-opentype'),
+       url('#{$font-name}.woff') format('woff'),
+       url('#{$font-name}.ttf') format('truetype'),
+       url('#{$font-name}.svg##{$font-name}') format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -42,7 +42,7 @@
         <span>
           <?php echo esc_html( get_theme_mod( 'footer_text', get_bloginfo( 'name' ) ) ); ?>
           <?php if ( get_theme_mod( 'footer_copyright', true ) ) echo '&copy;'; ?>
-          <?php if ( get_theme_mod( 'footer_year', true ) ) echo date( 'Y' ); ?>
+          <?php if ( get_theme_mod( 'footer_year', true ) ) echo date_i18n( 'Y' ); ?>
         </span>
 
         <?php

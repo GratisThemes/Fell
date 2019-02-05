@@ -10,7 +10,7 @@ const zip        = require( 'gulp-zip' )
 const info = {
   name:      'Fell',
   slug:      'fell',
-  version:   '1.1.4',
+  version:   '1.1.5',
   author:    'GratisThemes',
   email:     'gratisthemes@gmail.com',
   bugReport: 'https://github.com/GratisThemes/Fell/issues'
@@ -42,7 +42,7 @@ gulp.task('pot', () => {
 
 // Icon font
 gulp.task('icon-font', () => {
-  gulp.src('./assets/icons/*.svg')
+  gulp.src('./assets/fonts/fell-icon-font/src/icons/*.svg')
     .pipe(plumber())
     .pipe(iconfont({
       fontName: `${info.slug}-icon-font`,
@@ -54,7 +54,13 @@ gulp.task('icon-font', () => {
       fontHeight: 1000,
       fontWidth: 1000
     }))
-    .pipe(gulp.dest('./assets/fonts'))
+    .pipe(gulp.dest('./assets/fonts/fell-icon-font'))
+
+  gulp.src('./assets/fonts/fell-icon-font/src/scss/*.scss')
+    .pipe(plumber())
+    .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }))
+    .pipe(prefix(['last 30 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(gulp.dest('./assets/fonts/fell-icon-font'))
 })
 
 // Package
@@ -69,23 +75,17 @@ gulp.task( 'package', () => {
     '!./gulpfile.js',
     '!./package.json',
     '!./package-lock.json',
+    '!./assets/fonts/fell-icon-font/src/**/*.*'
   ], {
     base: '..'
   } ).pipe( zip( `${info.slug}_${info.version}.zip` ) )
      .pipe( gulp.dest( './releases' ) )
 } )
 
-// JS
-// gulp.task( 'js', () => {
-//   gulp.src( 'assets/js/**/*.js' )
-//     .pipe(plumber())
-// })
-
 // Watch
 gulp.task('watch', () => {
-  gulp.watch('scss/*.scss',        { cwd: './' }, [ 'scss' ])
-  gulp.watch('**/*.php',           { cwd: './' }, [ 'pot' ])
-  // gulp.watch('assets/js/**/*.js',  { cwd: './' }, [ 'js' ])
+  gulp.watch('scss/*.scss', { cwd: './' }, [ 'scss' ])
+  gulp.watch('**/*.php',    { cwd: './' }, [ 'pot' ])
 })
 
 gulp.task('default', [ 'watch', 'scss', 'pot' ]);

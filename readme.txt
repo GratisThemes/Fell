@@ -1,7 +1,7 @@
 === Fell ===
 Contributors: knifftech
 Requires at least: WordPress 5.0
-Tested up to: WordPress 5.0
+Tested up to: 5.0
 Version: 1.1.4
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,12 +33,22 @@ Lora
 https://fonts.google.com/specimen/Lora
 License: Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 
+= Icon fonts =
+Fell Icon Font
+License: MIT assets/fonts/fell-icon-font/LICENSE
+Source: assets/fonts/fell-icon-font/fell-icon-font.css
+
 = Images =
 Default header image (landscape.jpg)
 License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 https://pxhere.com/en/photo/848203
 
 == Changelog ==
+1.1.5 - 2019.02.05
+- Fixed readme information
+- Contained icon font seperate from the theme and added license information to readme
+- Replaced date function in footer.php
+
 1.1.4 - 2019.02.04
 - Escaped various variables
 
