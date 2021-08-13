@@ -1,0 +1,62 @@
+/* Components: Headers */
+.archive-header,
+.page-header,
+.entry-header {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  
+  h1,
+  h2 {
+    margin: 0;
+
+    i {
+      margin-inline-end: .25em;
+    }
+  }
+
+  h1 {
+    font-size: 2.6rem;
+
+    @media (min-width: $screen_large_phone) {
+      font-size: 3rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.7rem;
+
+    @media (min-width: $screen_large_phone) {
+      font-size: 2rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--anchor-color);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.archive-header,
+.page-header,
+body.single .entry-header {
+  margin-block-end: 2rem;
+}
+
+body.home.content-view-full .entry-header,
+body.archive.content-view-full .entry-header,
+body.content-view-full .archive-header {
+  text-align: start;
+}
+
+body.layout-two-columns .archive-header {
+  grid-column: 1 / 3;
+}

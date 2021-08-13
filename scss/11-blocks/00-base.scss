@@ -1,0 +1,84 @@
+.wp-block-cover-image,
+.wp-block-cover  {
+  height: auto;
+}
+
+.wp-block-cover-text {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wp-block-image {
+  figure {
+    border-bottom: 0;
+  }
+
+  figcaption {
+    margin: 0;
+    padding: 1em;
+  }
+
+  img {
+    border-radius: 0;
+  }
+}
+
+.wp-block-button a {
+  background-color: var(--background-color-alt);
+  color: var(--text-color-alt);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    filter: brightness(110%);
+  }
+}
+
+.wp-block-button.is-style-outline a {
+  border-color: var(--border-color);
+}
+
+.wp-block-button.is-style-squared a {
+  border-radius: var(--border-radius);
+}
+
+.blocks-gallery-grid .blocks-gallery-item,
+.wp-block-gallery .blocks-gallery-item {
+  overflow: auto;
+}
+
+.wp-block-file .wp-block-file__button {
+  display: table;
+  margin: .5em 0 1em 0;
+  font-size: 1rem;
+}
+
+p.wp-block-cover-text:not(.has-text-color) {
+  color: var(--color-white);
+}
+
+.wp-block-code {
+  background-color: var(--color-gray--200);
+  border-radius: var(--border-radius);
+  
+  code {
+    background-color: transparent;
+  }
+}
+
+.wp-block-verse {
+  font-family: var(--font-family);
+  padding: .5em 0;
+}
+
+.wp-block-calendar table {
+  display: table;
+  margin-block: 1em;
+}
+
+.wp-block-preformatted {
+  white-space: pre;
+  overflow-x: auto;
+}

@@ -1,0 +1,115 @@
+body,
+.site-container {
+  min-height: 100vh;
+}
+
+.site-container > * {
+  padding-inline: max(1rem, calc((100% - #{$content_width}) / 2));
+}
+
+.site-container,
+.site-main,
+.content-container,
+body.single .content-container > article,
+body.page .content-container > article {
+  > * + * {
+    margin-block-start: 4rem;
+  }
+}
+
+.content-container > article,
+.widget-area {
+  > * + * {
+    margin-block-start: 2rem;
+  }
+}
+
+.content-container {
+  > * + * {
+    margin-block-start: 6rem;
+  }
+}
+
+body.layout-two-columns .content-container {
+  @media (min-width: $screen_laptop) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    > * + * {
+      margin-block-start: 0;
+    }
+  }
+}
+body.layout-criss-cross .content-container > article {
+  @media (min-width: $screen_tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2em;
+    align-items: start;
+    align-content: start;
+
+    > * {
+      grid-column: 1;
+    }
+
+    .post-thumbnail {
+      grid-column: 2;
+      grid-row: 1 / 4;
+      margin: 0;
+    }
+
+    &:nth-child(even) {
+      > * {
+        grid-column: 2;
+      }
+
+      .post-thumbnail {
+        grid-column: 1;
+      }
+    }
+  }
+}
+
+body.has-left-sidebar,
+body.has-right-sidebar {
+  .site-container > * {
+    padding-inline: max(1rem, calc((100% - #{$content_width} - #{$screen_phone}) / 2));
+  }
+
+  .site-main {
+    @media (min-width: $screen_laptop) {
+      display: grid;
+      gap: 4rem;
+
+      > * + * {
+        margin-block-start: 0;
+      }
+    }
+  }
+}
+
+body.has-left-sidebar .site-main {
+  @media (min-width: $screen_laptop) {
+    grid-template-columns: minmax(0, 20em) minmax($screen_phone, 1fr);
+  }
+}
+
+body.has-right-sidebar .site-main {
+  @media (min-width: $screen_laptop) {
+    grid-template-columns: minmax($screen_phone, 1fr) minmax(0, 20em);
+  }
+}
+
+body.has-left-sidebar.has-right-sidebar {
+  .site-container > * {
+    padding-inline: max(1rem, calc((100% - #{$content_width} - #{$screen_phone} * 2) / 2));
+  }
+
+  .site-main {
+    @media (min-width: $screen_laptop) {
+      gap: 2rem;
+      grid-template-columns: minmax(0, 20em) minmax(0, 1fr) minmax(0, 20em);
+    }
+  }
+}

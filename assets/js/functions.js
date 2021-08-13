@@ -1,13 +1,20 @@
 ( function( window, document ) {
   
   const html        = document.querySelector( 'html' )
-  const socialLinks = html.querySelectorAll( '.social-nav a' )
-  const videos      = html.querySelectorAll( '.format-video iframe, .format-video object, .format-video embed' )
+  const socialLinks = html.querySelectorAll( '.social-menu a' )
   const scrollToTop = html.querySelector( '#scroll-to-top' )
+  const alignfull   = html.querySelectorAll( '.alignfull' )
 
   // Replace no-js class with js on html element
   html.classList.remove( 'no-js' )
   html.classList.add( 'js' )
+
+  // Full alignment
+  const scrollBarWidth = window.innerWidth - document.body.clientWidth
+  for ( const element of alignfull ) {
+    element.style.width      = `calc(100vw - ${scrollBarWidth}px)`
+    element.style.marginLeft = `calc(50% - 50vw + ${scrollBarWidth / 2}px)`
+  }
 
   // Social nav icons
   const socialIcons = [
@@ -55,29 +62,14 @@
     } )
   } )
 
-  // Force videos 16:9 aspect ratio
-  function sizeVideos() {
-    videos.forEach( function(video) {
-      video.style.height = Math.floor( video.offsetWidth / 16 * 9 ) + 'px'
-    } )
-  }
-
-  sizeVideos()
-
-  window.addEventListener( 'resize', function() {
-    sizeVideos()
-  } )
-
   // Scroll to top
   window.addEventListener( 'scroll', function() {
-    scrollToTop.style.bottom = window.scrollY > 500 ? '20px' : '-2000px'
+    scrollToTop.style.bottom = window.scrollY > 500 ? '1em' : '-2000px'
   } )
-
 
   scrollToTop.addEventListener( 'click', function(event) {
     event.preventDefault()
     window.scrollTo( { top: 0, behavior: 'smooth' } )
   } )
-
 
 } ) ( typeof window != 'undefined' ? window : this, document )

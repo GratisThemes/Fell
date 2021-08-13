@@ -1,0 +1,129 @@
+/* Widgets: Widgets */
+.widget-title {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-block: 0 .5em;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  a {
+    color: var(--text-color);
+  }
+}
+
+.widget-area-footer .widget-title {
+  a {
+    color: var(--text-color-alt);
+  }
+}
+
+.widget {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      margin-inline-start: 1em;
+    }
+  }
+
+  .wp-caption p {
+    margin: 0;
+  }
+}
+
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_rss,
+.widget_nav_menu {
+  ul {
+    list-style: none;
+  }
+
+  > ul > li + li {
+    padding-block-start: .5em;
+  }
+}
+
+.widget_recent_comments,
+.widget_rss {
+  a {
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.widget_calendar {
+  table {
+    max-width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  td,
+  th {
+    text-align: center;
+    padding: .5em;
+
+    @media (min-width: $screen_laptop) {
+      padding: .75em;
+    }
+  }
+
+  caption {
+    margin-block-end: .5em;
+  }
+
+  .wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.widget-area-footer .widget_calendar {
+  table,
+  td,
+  th {
+    border-color: var(--text-color-alt);
+  }
+}
+
+.widget_rss {
+  .widget-title {
+    img {
+      display: none;
+    }
+  }
+
+  .rss-date {
+    display: block;
+    font-weight: 600;
+    font-size: .9rem;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+
+  li + li {
+    margin-block-start: 1em;
+    padding-block-start: 1em;
+  }
+}
+.widget-area-footer {
+  input[type="submit"] {
+    border-color: var(--text-color-alt);
+  }
+}

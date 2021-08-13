@@ -1,0 +1,34 @@
+.site-footer {
+  background-color: var(--background-color-alt);
+  color: var(--text-color-alt);
+  padding-block: 2em;
+  text-align: center;
+
+  > * + * {
+    margin-block-start: 2em;
+  }
+  
+  a {
+    color: var(--text-color-alt);
+  }
+}
+
+.widget-areas-footer + .site-footer {
+  margin-block-start: 0;
+}
+
+.site-footer-info {
+  font-size: .9rem;
+
+  > * {
+    display: block;
+  }
+
+  > * + * {
+    margin-block-start: .5em;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

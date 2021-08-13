@@ -1,0 +1,20 @@
+/* Components: Scroll to top */
+#scroll-to-top {
+  background-color: var(--background-color-alt);
+  position: fixed;
+  inset-block-end: -2000px;
+  inset-inline-end: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: .8;
+  box-sizing: content-box;
+  transition: inset 1s ease-in-out, opacity .3s ease-in-out;
+
+  i {
+    padding: .5em;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

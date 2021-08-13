@@ -1,0 +1,28 @@
+/* Components: Post thumbnail */
+.post-thumbnail {
+  display: block;
+  margin-block: 1rem;
+
+  img {
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+body.layout-criss-cross .post-thumbnail {
+  background-color: var(--color-gray--200);
+  color: var(--color-gray);
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20rem;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

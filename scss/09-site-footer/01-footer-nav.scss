@@ -1,0 +1,19 @@
+/* 5.2 Site footer: Footer nav */
+.footer-social-menu,
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 0;
+  list-style: none;
+  gap: 1em;
+  justify-content: center;
+
+  li {
+    margin-block: 0;
+  }
+
+}
+
+.footer-social-menu {
+  font-size: 1.2rem;
+}

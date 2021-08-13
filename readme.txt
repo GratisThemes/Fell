@@ -1,14 +1,15 @@
 === Fell ===
-Contributors: knifftech
+Contributors: Gratis Themes (https://github.com/GratisThemes)
 Requires at least: WordPress 5.0
 Tested up to: 5.0
-Version: 1.1.4
+Requires at least: PHP 7.0
+Theme version: 2.0.0
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, blog
+Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 
 == Copyright ==
-Fell WordPress Theme, Copyright (C) 2018-2019, Gratis Themes
+Fell WordPress Theme, Copyright (C) 2018-2021, Gratis Themes
 Fell is distributed under the terms of the GNU GPL v3
 
 This program is free software: you can redistribute it and/or modify
@@ -24,7 +25,7 @@ GNU General Public License for more details.
 = Libraries =
 Fell bundles the following third-party resources:
 
-normalize.css v8.0.0
+normalize.css v8.0.1
 License: MIT
 Source: github.com/necolas/normalize.css
 
@@ -44,6 +45,9 @@ License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 https://pxhere.com/en/photo/848203
 
 == Changelog ==
+2.0.0 - 2021.08.13
+Rewritten from the ground up Fell 2.0 aims to capture the original vision of the theme, but with a cleaner approach.
+
 1.1.5 - 2019.02.05
 - Fixed readme information
 - Contained icon font seperate from the theme and added license information to readme

@@ -1,0 +1,42 @@
+/* Widgets: Widget-ares */
+.widget-areas-above-content,
+.widget-areas-below-content,
+.widget-areas-footer {
+  > * + * {
+    margin-block-start: 2rem;
+  }
+  
+  @media (min-width: $screen_laptop) {
+    > * + * {
+      margin-block-start: 0;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4rem;
+  }
+}
+
+.widget-areas-footer {
+  background-color: var(--background-color-alt);
+  color: var(--text-color-alt);
+  padding-block: 4rem;
+}
+
+.widget-area-above-content-one,
+.widget-area-below-content-one,
+.widget-area-footer-one {
+  grid-column: 1;
+}
+
+.widget-area-above-content-two,
+.widget-area-below-content-two,
+.widget-area-footer-two {
+  grid-column: 2;
+}
+
+.widget-area-above-content-three,
+.widget-area-below-content-three,
+.widget-area-footer-three {
+  grid-column: 3;
+}

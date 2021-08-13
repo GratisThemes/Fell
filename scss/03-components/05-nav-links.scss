@@ -1,0 +1,87 @@
+/* Compoinents: Nav links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  
+  flex-direction: column;
+  gap: 2em;
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: $screen_large_phone) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  a {
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--anchor-color);
+    }
+  }
+}
+
+.pagination .nav-links {
+  justify-content: flex-start;
+}
+
+.nav-previous,
+.nav-next,
+.page-numbers:not(.dots) {
+  text-decoration: none;
+}
+
+.nav-next {
+  margin-inline-start: auto;
+}
+
+.nav-previous ~ .nav-next {
+  margin-inline-start: 0;
+}
+
+.nav-previous a,
+.nav-next a,
+.page-numbers:not(.dots) {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-previous a,
+.nav-next a {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: .8rem;
+  }
+
+  span:last-child {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.nav-next a {
+  @media (min-width: $screen_large_phone) {
+    align-items: flex-end;
+  }
+}
+
+.page-numbers.current {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.pagination .nav-links {
+  font-size: 1rem;
+  justify-content: center;
+  flex-direction: row;
+}
+
+body.layout-two-columns .pagination {
+  grid-column: 1 / 3;
+}

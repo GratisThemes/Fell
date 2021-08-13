@@ -1,0 +1,40 @@
+.site-identity {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+  gap: .5em;
+  opacity: .9;
+  border: var(--border-width) solid var(--text-color);
+  text-transform: uppercase;
+
+  > * {
+    margin: 0;
+  }
+}
+
+.site-title,
+.site-tagline {
+  line-height: 1;
+}
+
+.site-title,
+.site-title a,
+.site-tagline,
+.site-tagline a {
+  color: var(--text-color);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.site-tagline {
+  font-size: 1.2rem;
+}

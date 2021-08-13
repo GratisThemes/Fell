@@ -1,44 +1,27 @@
 <?php
 /**
- * Various changes to wordpress functions
+ * Various changes to WordPress functions
  *
  * @package Fell
+ * @since   Fell 1.0
  */
-
 
 /**
- * Custom excerpt more
- *
- * @since 1.0.0
- * @version 1.1.0
+ * Filter for body classes
  */
-function fell_excerpt_more( $more ) {
-  if ( is_admin() ) return $more;
-
-  return sprintf(
-    '<a class="read-more-link" href="%1$s">%2$s<span class="screen-reader-text">%2$s</span></a>',
-    esc_url( get_permalink( get_the_ID() ) ),
-    __( 'Read more', 'fell' )
-  );
-}
-add_filter('excerpt_more', 'fell_excerpt_more');
+require get_template_directory() . '/inc/filters/body-class.php';
 
 /**
- * Add classes to the body depending on customize settings
- *
- * @since 1.0.0
- * @version 1.0.0
+ * Filter for the end of excerpts
  */
-function fell_body_class( $classes ) {
+require get_template_directory() . '/inc/filters/excerpt-more.php';
 
-  if ( is_home() || is_archive() ) {
-    $classes[] = 'layout-' . esc_attr( get_theme_mod( 'content_layout', 'one-column' ) );
-    $classes[] = 'content-view-' . esc_attr( get_theme_mod( 'content_view', 'excerpt' ) );
-  }
+/**
+ * Filter for the post thumbnail html
+ */
+require get_template_directory() . '/inc/filters/post-thumbnail-html.php';
 
-  return $classes;
-
-}
-add_filter( 'body_class', 'fell_body_class' );
-
-?>
+/**
+ * Filter for the post title
+ */
+require get_template_directory() . '/inc/filters/post-title.php';

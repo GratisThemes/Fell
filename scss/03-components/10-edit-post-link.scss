@@ -1,0 +1,15 @@
+/* Components: Post edit link */
+.entry-header .post-edit-link,
+.page-header .post-edit-link {
+  position: absolute;
+  display: inline-block;
+  inset-block-start: .25em;
+  inset-inline-end: .25em;
+  color: var(--anchor-color);
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
