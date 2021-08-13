@@ -36,20 +36,20 @@ msgid_plural "%1$s throughts on \"%2$s\""
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:116
+#: functions.php:112
 msgctxt "Header Image"
 msgid "header_image"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:120
 msgid "Header"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:121
 msgid "Social links"
 msgstr ""
 
-#: functions.php:126, inc/actions/customizer.php:192
+#: functions.php:122, inc/actions/customizer.php:192
 msgid "Footer"
 msgstr ""
 
@@ -103,6 +103,10 @@ msgstr ""
 
 #: template-parts/site-footer.php:77
 msgid "Scroll to the top"
+msgstr ""
+
+#: template-parts/site-navigation.php:23
+msgid "Toggle menu"
 msgstr ""
 
 #: inc/actions/customizer.php:30
@@ -182,19 +186,27 @@ msgid "Advertise theme"
 msgstr ""
 
 #: inc/actions/widget-areas.php:16
-msgid "Above content one"
+msgid "Above content (left column)"
 msgstr ""
 
-#: inc/actions/widget-areas.php:18, inc/actions/widget-areas.php:30, inc/actions/widget-areas.php:42
-msgid "Widget area above the content"
+#: inc/actions/widget-areas.php:18
+msgid "Widget area above the content, left column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:28
-msgid "Above content two"
+msgid "Above content (center column)"
+msgstr ""
+
+#: inc/actions/widget-areas.php:30
+msgid "Widget area above the content, center column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:40
-msgid "Above content three"
+msgid "Above content (right column)"
+msgstr ""
+
+#: inc/actions/widget-areas.php:42
+msgid "Widget area above the content, right column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:52
@@ -214,35 +226,51 @@ msgid "Widget area on the right side of the content"
 msgstr ""
 
 #: inc/actions/widget-areas.php:76
-msgid "Below content one"
+msgid "Below content (left column)"
 msgstr ""
 
-#: inc/actions/widget-areas.php:78, inc/actions/widget-areas.php:90, inc/actions/widget-areas.php:102
-msgid "Widget area below the content"
+#: inc/actions/widget-areas.php:78
+msgid "Widget area below the content, left column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:88
-msgid "Below content two"
+msgid "Below content (center column)"
+msgstr ""
+
+#: inc/actions/widget-areas.php:90
+msgid "Widget area below the content, center column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:100
-msgid "Below content three"
+msgid "Below content (right column)"
+msgstr ""
+
+#: inc/actions/widget-areas.php:102
+msgid "Widget area below the content, right column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:112
-msgid "Footer one"
+msgid "Footer (left column)"
 msgstr ""
 
-#: inc/actions/widget-areas.php:114, inc/actions/widget-areas.php:126, inc/actions/widget-areas.php:138
-msgid "Widget area in the footer"
+#: inc/actions/widget-areas.php:114
+msgid "Widget area in the footer, left column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:124
-msgid "Footer two"
+msgid "Footer (center column)"
+msgstr ""
+
+#: inc/actions/widget-areas.php:126
+msgid "Widget area in the footer, center column"
 msgstr ""
 
 #: inc/actions/widget-areas.php:136
-msgid "Footer three"
+msgid "Footer (right column)"
+msgstr ""
+
+#: inc/actions/widget-areas.php:138
+msgid "Widget area in the footer, right column"
 msgstr ""
 
 #: inc/filters/excerpt-more.php:24
