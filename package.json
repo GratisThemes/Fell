@@ -1,6 +1,6 @@
 {
   "name": "fell",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Just another WordPress theme",
   "private": true,
   "scripts": {
@@ -23,7 +23,7 @@
   "author": {
     "name": "Gratis Themes",
     "email": "gratisthemes@gmail.com",
-    "url": "https://gratisthemes.kniffen.dev"
+    "url": "https://gratis-themes.com"
   },
   "license": "GPL-3.0",
   "bugs": {

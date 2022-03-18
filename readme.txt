@@ -1,5 +1,5 @@
 === Fell ===
-Contributors: Gratis Themes (https://github.com/GratisThemes)
+Contributors: Gratis Themes (https://gratis-themes.com)
 Requires at least: WordPress 5.0
 Tested up to: 5.0
 Requires at least: PHP 7.0
@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 
 == Copyright ==
-Fell WordPress Theme, Copyright (C) 2018-2021, Gratis Themes
+Fell WordPress Theme, Copyright (C) 2018-2022, Gratis Themes
 Fell is distributed under the terms of the GNU GPL v3
 
 This program is free software: you can redistribute it and/or modify
@@ -45,8 +45,11 @@ License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 https://pxhere.com/en/photo/848203
 
 == Changelog ==
+2.0.1 - 2022.03.18
+- Updated author domain
+
 2.0.0 - 2021.08.13
-Rewritten from the ground up Fell 2.0 aims to capture the original vision of the theme, but with a cleaner approach.
+- Rewritten from the ground up Fell 2.0 aims to capture the original vision of the theme, but with a cleaner approach.
 
 1.1.5 - 2019.02.05
 - Fixed readme information

@@ -1,4 +1,4 @@
-# Copyright (C) 2021 fell
+# Copyright (C) 2022 fell
 # This file is distributed under the same license as the fell package.
 msgid ""
 msgstr ""
